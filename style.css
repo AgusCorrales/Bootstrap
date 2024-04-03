@@ -1,0 +1,30 @@
+.formulario{
+    margin-left: 15px; 
+}
+
+.input-group-text{
+    position: relative;
+    cursor: pointer;
+}
+
+.input-group-text:hover + #passwordRequirements{
+    display: block;
+
+}
+ 
+#passwordRequirements{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    background-color: grey;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.hidden{
+    display: none;
+}
+
