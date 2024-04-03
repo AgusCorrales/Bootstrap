@@ -15,15 +15,15 @@ function onSubmit(e) {
     e.preventDefault()
     const inputFirstNameValue = inputFirstName.value 
     if(inputFirstName.value === ""|| inputLastName.value === "" || inputEmail.value === "" || inputPassword.value === ""){
-        msg.innerHTML = "Plase enter all fields"
+        alert("Complete all fields" , "danger")
     }else if (/(\w+?@\w+?\x2E.+)/.test(inputEmail.value) !== true){
-        msg.innerHTML = "Please enter a correct email"  
+        alert("Please enter a correct email" , "warning")  
     }else if (inputPassword.value !== inputConfirmPass.value){
-        msg.innerHTML = "Password doesn't match"
+        alert("Password doesn't match" , "warning")
     } else if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/.test(inputPassword.value) !== true){
-        msg.innerHTML = "Invalid Password"
+        alert ("Invalid Password" , "danger")
     } else {
-        msg.innerHTML = "User saved"
+        alert ("User saved correctly" , "success")
         localStorage.setItem("usuario", JSON.stringify({
             firstName: inputFirstName.value,
             lastName: inputLastName.value,
@@ -43,6 +43,12 @@ function onSubmit(e) {
 
 }
 
+
+const alert = (message , type) => {
+    msg.innerHTML = `<div id='appendedWraper' class="position-absolute ml-3 alert alert-${type} alert-dismissible mt-2" role="alert">
+    <div>${message}</div>
+    </div>`;
+}    
 
     
 
