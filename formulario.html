@@ -17,15 +17,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/formulario.html">Create User</a>
+                <a class="nav-link" href="/formulario.html">Crear Usuario</a>
               </li>
-              <li class="nav-item dropdown">
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
-                </a>
+                </a> -->
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -35,28 +35,28 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Escribe aqui..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
         </div>
       </nav>
       <form class="formulario" novalidate>
         <div class="col-md-4 mt-2">
-          <label for="validationCustom01" class="form-label">First name</label>
+          <label for="validationCustom01" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="validationCustom01" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
+        <div class="col-md-4 mt-2">
+          <label for="validationCustom02" class="form-label">Apellidos</label>
           <input type="text" class="form-control" id="validationCustom02" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mt-2">
           <label for="validationCustomUsername" class="form-label">Email</label>
           <div class="input-group has-validation">
             <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -66,8 +66,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <label for="validationCustom03" class="form-label">Password</label>
+        <div class="col-md-3 mt-2">
+          <label for="validationCustom03" class="form-label">Contraseña</label>
           <div class="input-group has-validation">
          <input type="password" class="form-control" id="validationCustom03" required>  
             <span class="input-group-text" id="inputGroupPrepend">!</span>
@@ -75,15 +75,15 @@
             <ul id="oculto">
                 <li>Al menos 8 caracteres de longitud.</li>
                 <li>Al menos una letra mayúscula.</li>
-                <li>Al menmos una letra minúscula.</li>
+                <li>Al menos una letra minúscula.</li>
                 <li>Al menos un número</li>
             </ul>
             </div>
         </div>     
         </div>
         </div>
-        <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Repit Password</label>
+        <div class="col-md-3 mt-2">
+          <label for="validationCustom05" class="form-label">Repetir Contraseña</label>
           <input type="password" class="form-control" id="validationCustom05" required>
           <div class="invalid-feedback">
             Please provide a valid password
@@ -94,7 +94,7 @@
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
             <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
+              Acepto términos y condiciones
             </label>
             <div class="invalid-feedback">
               You must agree before submitting.
@@ -103,7 +103,7 @@
         </div>
         <br>
         <div class="col-12">
-          <button class="btn btn-primary" id="btn" type="submit">Submit form</button>
+          <button class="btn btn-primary" id="btn" type="submit">Enviar</button>
         </div>
         <div id="msg"></div>
      </form>

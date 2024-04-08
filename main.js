@@ -18,15 +18,15 @@ function onSubmit(e) {
     const inputEmailValue = inputEmail.value;
     const inputPasswordValue = inputPassword.value;
     if(inputFirstName.value === ""|| inputLastName.value === "" || inputEmail.value === "" || inputPassword.value === ""){
-        alert("Complete all fields" , "danger")
+        alert("Completar todos los campos" , "danger")
     }else if (/(\w+?@\w+?\x2E.+)/.test(inputEmail.value) !== true){
-        alert("Please enter a correct email" , "warning")
+        alert("Por favor ingrese un correo electrónico correcto" , "warning")
     }else if (inputPassword.value !== inputConfirmPass.value){
-        alert("Password doesn't match" , "warning")
+        alert("Las contraseñas no coinciden" , "warning")
     } else if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/.test(inputPassword.value) !== true){
-        alert ("Invalid Password" , "danger")
+        alert ("Contraseña invalida" , "danger")
     } else {
-        alert ("User saved correctly" , "success")
+        alert ("Usuario guardado correctamente" , "success")
         const user = {
             name: inputFirstNameValue,
             surname: inputFirstLastnameValue,
